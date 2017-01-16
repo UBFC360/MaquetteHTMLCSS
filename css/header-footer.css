@@ -1,0 +1,132 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav > ul{
+    margin: 5px;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav > ul > li{
+    display: inline;
+    margin: 0 5px 0 5px ;
+}
+
+nav > ul > li > a{
+    color: black;
+    text-decoration: none;
+}
+
+nav > ul > li > a.image-nav{
+    display: inline-block;
+    text-indent: -999999px;
+    height: 25px;
+    width: 25px;
+    background-size: auto;
+}
+
+.facebook{
+    background: url('../image-interface/img-reseaux-sociaux/facebook.svg') no-repeat;
+}
+
+.twitter{
+    background: url('../image-interface/img-reseaux-sociaux/twitter.svg') no-repeat;
+}
+
+.youtube{
+    background: url('../image-interface/img-reseaux-sociaux/youtube.svg') no-repeat;
+}
+
+nav .barres {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 501;
+    margin: 5px;
+}
+nav .barre {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #056AB0;
+    margin: 4px 0;
+    transition: all ease 500ms;
+}
+
+ul.menu{
+    margin-right: 30px;
+}
+
+/*================== footer ================*/
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 30px;
+}
+
+footer p{
+    margin: 0;
+    padding: 0;
+}
+
+.footer-logo p.logo-footer{
+    margin: auto;
+    display: block;
+    text-indent: -999999px;
+    height: 200px;
+    width: 150px;
+    background-size: auto;
+    background: url('../image-interface/logofooter.svg') no-repeat;
+}
+
+footer .footer{
+    width: 25%;
+    text-align: center;
+
+}
+
+footer .footer-partenaire li{
+    display: inline;
+}
+
+footer .footer-partenaire .logo-partenaire{
+    margin: auto;
+    display: inline-block;
+    text-indent: -999999px;
+    height: 70px;
+    width: 100px;
+    background-size: contain;
+}
+
+footer .footer-partenaire .partenaire1{
+    background-image: url('../image-interface/logo-institut/logo_ub.jpg');
+    background-repeat: no-repeat;
+}
+footer .footer-partenaire .partenaire2{
+    background-image: url('../image-interface/logo-institut/logo_ufc.png');
+    background-repeat: no-repeat;
+}
+footer .footer-partenaire .partenaire3{
+    background-image: url('../image-interface/logo-institut/logo_agrosup.png');
+    background-repeat: no-repeat;
+}
+footer .footer-partenaire .partenaire4{
+    background-image: url('../image-interface/logo-institut/logo_ensmm.jpg');
+    background-repeat: no-repeat;
+}
+footer .footer-partenaire .partenaire5{
+    background-image: url('../image-interface/logo-institut/logo_utbm.jpg');
+    background-repeat: no-repeat;
+}
+footer .footer-partenaire .partenaire6{
+    background-image: url('../image-interface/logo-institut/BSB_logo_pantone690C.png');
+    background-repeat: no-repeat;
+}

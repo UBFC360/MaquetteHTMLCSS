@@ -1,0 +1,58 @@
+/* ========================= Police d'écriture =========================*/
+
+@font-face {
+    font-family: biko;
+    src: url('../fonts/Biko_Regular.otf'),
+    url('../fonts/Biko_Bold.otf'),
+    url('../fonts/Biko_Black.otf');
+}
+
+/* ========================= Général =========================*/
+
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: biko, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+
+                    /*=========== Couleur ===========*/
+
+.blanc{
+    color: white;
+}
+
+.noir{
+    color: black;
+}
+
+.bleu-fonce{
+    color: #056AB0;
+}
+
+.bleu-clair{
+    color: #078ACC;
+}
+
+.orange{
+    color: #DC931A;
+}
+
+.vert{
+    color: #B7C72A;
+}
+
+.violet{
+    color: #981B79;
+}
+
+.gris{
+    color: #626A71;
+}
+
