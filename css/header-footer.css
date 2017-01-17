@@ -31,15 +31,15 @@ nav > ul > li > a.image-nav{
 }
 
 .facebook{
-    background: url('../image-interface/img-reseaux-sociaux/facebook.svg') no-repeat;
+    background: url('image-contenu/img-reseaux-sociaux/facebook.svg') no-repeat;
 }
 
 .twitter{
-    background: url('../image-interface/img-reseaux-sociaux/twitter.svg') no-repeat;
+    background: url('image-contenu/img-reseaux-sociaux/twitter.svg') no-repeat;
 }
 
 .youtube{
-    background: url('../image-interface/img-reseaux-sociaux/youtube.svg') no-repeat;
+    background: url('image-contenu/img-reseaux-sociaux/youtube.svg') no-repeat;
 }
 
 nav .barres {

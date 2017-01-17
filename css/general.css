@@ -10,9 +10,36 @@
 h1,h2,h3,h4,h5,h6 {
     font-family: Biko, serif;
 }
-
 p,a {
     font-family: Calibri, sans-serif;
+}
+
+h1 {
+    font-size: 64px;
+    font-family: Biko_Black, sans-serif;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+h3 {
+    font-size: 28px;
+}
+
+p {
+     font-size: 18px;
+    font-weight: lighter;
+ }
+
+.savoir-plus {
+     font-weight: bold;
+ }
+
+@media screen and (max-width:640px) {
+    h1 {font-size: 36px;}
+    h2 {font-size: 25px;}
+    p{font-size: 15px;}
 }
 
 
@@ -24,15 +51,49 @@ html{
 }
 
 body{
-    font-family: biko, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f7f7f7;
 }
 
+                    /*============ Détails ===========*/
 
+li {
+    list-style: none;
+}
 
-                    /*=========== Couleur ===========*/
+a {
+    text-decoration: none;
+}
+
+                    /*========= Mise en page =========*/
+
+.img-background{
+    width: 100%;
+}
+
+.principale {
+    width: 960px;
+    margin: 30px auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.moitie{
+    width: 50%;
+}
+
+@media screen and (max-width: 960px){
+    .principale{width: 100%;
+                margin: 15px;}
+
+}
+
+@media screen and (max-width: 640px){
+    .moitie{width: 100%;}
+}
+
+                    /*=========== Couleurs ===========*/
 
 .blanc{
     color: white;
@@ -66,3 +127,38 @@ body{
     color: #626A71;
 }
 
+/* ========================= Spécifique =========================*/
+
+.img-head{
+    position: relative;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    padding-top:20%;
+    padding-bottom:20%;
+}
+
+.img-head > h1,
+.img-head > img {
+    z-index: 3;
+}
+
+                    /*=========== Page campus ===========*/
+
+.campus {
+    background: url("image-contenu/img-head/viecampus.jpeg") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height:auto;
+}
+
+.campus::before {
+    content: "";
+    background-color: rgba(183,199,42,0.7);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+}

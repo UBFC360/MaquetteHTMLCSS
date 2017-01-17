@@ -1,0 +1,11 @@
+#fleche{
+    -moz-animation: bounce 0.35s ease infinite alternate;
+    -webkit-animation: bounce 0.35s ease infinite alternate;
+    animation: bounce 0.35s ease infinite alternate;
+    width: 2em;
+    padding-top: 40px
+}
+@keyframes bounce{
+    from {transform: translateY(0);}
+    to   {transform: translateY(-20px);}
+}
