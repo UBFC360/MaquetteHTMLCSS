@@ -7,6 +7,15 @@
     url('../fonts/Biko_Black.otf');
 }
 
+h1,h2,h3,h4,h5,h6 {
+    font-family: Biko, serif;
+}
+
+p,a {
+    font-family: Calibri, sans-serif;
+}
+
+
 /* ========================= Général =========================*/
 
 html{
@@ -20,6 +29,7 @@ body{
     padding: 0;
     background-color: #f7f7f7;
 }
+
 
 
                     /*=========== Couleur ===========*/
