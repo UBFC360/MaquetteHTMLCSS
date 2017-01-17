@@ -21,6 +21,7 @@ h1 {
 
 h2 {
     font-size: 35px;
+    margin-top: 0;
 }
 
 h3 {
@@ -44,6 +45,12 @@ p {
 
 
 /* ========================= Général =========================*/
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
 html{
     margin: 0;
@@ -75,8 +82,8 @@ a {
 .principale {
     width: 960px;
     margin: 30px auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .moitie{
@@ -85,12 +92,104 @@ a {
 
 @media screen and (max-width: 960px){
     .principale{width: 100%;
-                margin: 15px;}
+                padding: 15px;}
 
 }
 
 @media screen and (max-width: 640px){
     .moitie{width: 100%;}
+}
+
+                    /*===== gestion des colonnes =====*/
+
+.col-2-img {
+    display: flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+}
+
+.col-2-img > div:first-of-type {
+    width: 630px;
+    height: 350px;
+    vertical-align: top;
+    overflow: hidden;
+}
+
+div > img {
+    width: 100%;
+    height: auto;
+}
+
+.col-2-img > div {
+    width: 310px;
+    vertical-align: top;
+}
+
+.containerx3 {
+    display: flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.containerx3 > div {
+    width: 300px;
+    height: auto;
+    vertical-align: top;
+    overflow: hidden;
+}
+
+.containerx3 > div > img {
+    width: 300px;
+    height: 300px;
+    background-color: lightgrey;
+}
+
+.col-2-txt {
+    display: flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+}
+
+.col-2-txt > div:last-of-type {
+    width: 630px;
+    height: 350px;
+    vertical-align: top;
+    overflow: hidden;
+    background-color: lightgrey;
+}
+
+.col-2-txt > div {
+    width: 310px;
+    vertical-align: top;
+}
+
+@media screen and (max-width: 640px){
+    .col-2-img > div:first-of-type {
+        width: 100%;
+        height: auto;
+    }
+    .col-2-txt > div:last-of-type {
+        width: 100%;
+        height: auto;
+    }
+    .containerx3 > div {
+        width: 100%;
+        height: auto;
+    }
+    .containerx3 > div > img {
+        width: 100%;
+        height: auto;
+        background-color: lightgrey;
+    }
 }
 
                     /*=========== Couleurs ===========*/
