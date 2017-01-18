@@ -10,6 +10,7 @@
 h2,h3,h4,h5,h6 {
     font-family: Biko, serif;
 }
+
 p,a {
     font-family: Calibri, sans-serif;
     color: #626A71;
@@ -113,28 +114,27 @@ a {
 
 .col-2-img {
     display: flex;
-    justify-content: space-between;
+    -webkit-flex-direction: row;
     -webkit-justify-content: space-between;
-    flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
 }
 
 .col-2-img > div:first-of-type {
-    width: 630px;
-    height: 350px;
+    width: calc(66.6% - 1em);
     vertical-align: top;
     overflow: hidden;
+    margin-bottom: 1em;
+}
+
+.col-2-img > div {
+    width: calc(33.3% - 1em);
+    vertical-align: top;
+    margin-bottom: 1em;
 }
 
 div > img {
     width: 100%;
     height: auto;
-}
-
-.col-2-img > div {
-    width: 310px;
-    vertical-align: top;
 }
 
 .containerx3 {
@@ -147,16 +147,14 @@ div > img {
 }
 
 .containerx3 > div {
-    width: 300px;
-    height: auto;
+    width: calc(33.3% - 1em);
     vertical-align: top;
     overflow: hidden;
-    margin-bottom: 20px;
+    margin-bottom: 1em;
 }
 
 .containerx3 > div > img {
-    width: 300px;
-    height: 300px;
+    width: 100%;
     background-color: lightgrey;
 }
 
@@ -170,35 +168,63 @@ div > img {
 }
 
 .col-2-txt > div:last-of-type {
-    width: 630px;
-    height: 350px;
+    width: calc(66.6% - 1em);
     vertical-align: top;
     overflow: hidden;
+    margin-bottom: 1em;
     background-color: lightgrey;
 }
 
 .col-2-txt > div {
-    width: 310px;
+    width: calc(33% - 1em);
     vertical-align: top;
 }
 
-@media screen and (max-width: 640px){
+.containerx4 {
+    display: flex;
+    -webkit-flex-direction: row;
+    -webkit-justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+}
+
+.containerx4 > div {
+    width: calc(25% - 1em);
+    background-color: lightgrey;
+    margin-bottom: 1em;
+}
+
+@media screen and (max-width: 960px){
+    .containerx4 > div {
+        width: calc(50% - 1em);
+        margin-bottom: 1em;
+    }
     .col-2-img > div:first-of-type {
         width: 100%;
-        height: auto;
+        margin-bottom: 1em;
+    }
+    .col-2-img > div {
+        width: 100%;
+    }
+    .containerx3 > div {
+        width: calc(50% - 1em);
+        margin-bottom: 1em;
     }
     .col-2-txt > div:last-of-type {
         width: 100%;
-        height: auto;
+        margin-bottom: 1em;
+    }
+    .col-2-txt > div {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 640px){
+    .containerx4 > div {
+        width: 100%;
     }
     .containerx3 > div {
         width: 100%;
-        height: auto;
-    }
-    .containerx3 > div > img {
-        width: 100%;
-        height: auto;
-        background-color: lightgrey;
+        margin-bottom: 1em;
     }
 }
 
