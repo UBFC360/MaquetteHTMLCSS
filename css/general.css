@@ -12,6 +12,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 p,a {
     font-family: Calibri, sans-serif;
+    color: #626A71;
 }
 
 h1 {
@@ -30,8 +31,12 @@ h3 {
 
 p {
      font-size: 18px;
-    font-weight: lighter;
+     font-weight: lighter;
  }
+
+.centre {
+    text-align: center;
+}
 
 .savoir-plus {
      font-weight: bold;
@@ -41,6 +46,9 @@ p {
     h1 {font-size: 36px;}
     h2 {font-size: 25px;}
     p{font-size: 15px;}
+    .centre {
+        text-align: left;
+    }
 }
 
 
@@ -84,6 +92,7 @@ a {
     margin: 30px auto;
     padding-top: 100px;
     padding-bottom: 100px;
+    z-index:3;
 }
 
 .moitie{
@@ -92,7 +101,8 @@ a {
 
 @media screen and (max-width: 960px){
     .principale{width: 100%;
-                padding: 15px;}
+                padding: 15px;
+                z-index:3;}
 
 }
 
@@ -142,6 +152,7 @@ div > img {
     height: auto;
     vertical-align: top;
     overflow: hidden;
+    margin-bottom: 20px;
 }
 
 .containerx3 > div > img {
@@ -228,6 +239,8 @@ div > img {
 
 /* ========================= Spécifique =========================*/
 
+                    /*========= gestion images =========*/
+
 .img-head{
     position: relative;
     display: flex;
@@ -242,6 +255,21 @@ div > img {
     z-index: 3;
 }
 
+.img-background {
+    position: relative;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    padding-top:15%;
+    padding-bottom:15%;
+}
+
+h2.blanc {
+    border-top: 2px solid white;
+    width: 25%;
+    padding-top: 3px;
+}
+
                     /*=========== Page campus ===========*/
 
 .campus {
@@ -254,6 +282,62 @@ div > img {
 .campus::before {
     content: "";
     background-color: rgba(183,199,42,0.7);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+.campus2 {
+    background: url("image-contenu/img-head/associations.jpeg") no-repeat fixed;
+    background-size: cover;
+    width: 100%;
+    height:auto;
+}
+
+.campus2::before {
+    content: "";
+    background-color: rgba(183,199,42,0.7);
+    position: absolute;
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+                    /*=========== Page recherche ===========*/
+
+.recherche{
+    background: url("image-contenu/img-head/recherche.jpeg") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height:auto;
+}
+
+.recherche::before {
+    content: "";
+    background-color: rgba(152,27,121,0.7);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+.recherche2 {
+    background: url("image-contenu/img-head/labo.jpeg") no-repeat fixed;
+    background-size: cover;
+    width: 100%;
+    height:auto;
+}
+
+.recherche2::before {
+    content: "";
+    background-color: rgba(152,27,121,0.7);
     position: absolute;
     top: 0;
     right: 0;
