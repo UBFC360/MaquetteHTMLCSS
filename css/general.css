@@ -51,7 +51,6 @@ p {
     }
 }
 
-
 /* ========================= Général =========================*/
 
 * {
@@ -311,7 +310,7 @@ h2.blanc {
                     /*=========== Page recherche ===========*/
 
 .recherche{
-    background: url("image-contenu/img-head/recherche.jpeg") no-repeat center;
+    background: url("image-contenu/img-head/recherche.jpg") no-repeat center;
     background-size: cover;
     width: 100%;
     height:auto;
@@ -338,6 +337,82 @@ h2.blanc {
 .recherche2::before {
     content: "";
     background-color: rgba(152,27,121,0.7);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+                    /*============= Page UBFC =============*/
+
+.ubfc{
+    background: url("image-contenu/img-head/ubfc.jpeg") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height:auto;
+}
+
+.ubfc::before {
+    content: "";
+    background-color: rgba(5,106,176,0.7);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+.ubfc2 {
+    background: url("image-contenu/img-head/direction.jpeg") no-repeat fixed;
+    background-size: cover;
+    width: 100%;
+    height:auto;
+}
+
+.ubfc2::before {
+    content: "";
+    background-color: rgba(5,106,176,0.7);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+                    /*========= Page international =========*/
+
+.international{
+    background: url("image-contenu/img-head/International.jpeg") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height:auto;
+}
+
+.international::before {
+    content: "";
+    background-color: rgba(220,147,26,0.7);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+.international2 {
+    background: url("image-contenu/img-head/international 2.jpeg") no-repeat fixed;
+    background-size: cover;
+    width: 100%;
+    height:auto;
+}
+
+.international2::before {
+    content: "";
+    background-color: rgba(220,147,26,0.7);
     position: absolute;
     top: 0;
     right: 0;
