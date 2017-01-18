@@ -63,6 +63,113 @@ ul.menu{
     margin-right: 30px;
 }
 
+nav .menucache{
+    background-color: #056AB0;
+    color: white;
+    display: block;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+nav .menucache .barre2{
+    display: flex;
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+}
+
+nav .menucache .barre1{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 0;
+}
+
+nav .menucache .barre1 h1{
+    margin: 0;
+    padding: 0;
+    font-size: 2.5rem;
+    font-family: Biko, sans-serif;
+}
+
+nav .menucache .barre1 input{
+    border: none;
+    padding: 5px;
+}
+
+nav .menucache .barre1 i{
+    margin: 0 10px;
+}
+
+ul.sousmenu:nth-of-type(5n+0){
+    background-color: #078ACC;
+}
+
+ul.sousmenu:nth-of-type(5n+0) li:hover{
+    background-color: #035984;
+}
+
+ul.sousmenu:nth-of-type(5n+1){
+    background-color: #981B79;
+}
+
+ul.sousmenu:nth-of-type(5n+1) li:hover{
+    background-color: #590f46;
+}
+
+ul.sousmenu:nth-of-type(5n+2){
+    background-color: #DC931A;
+}
+
+ul.sousmenu:nth-of-type(5n+2) li:hover{
+    background-color: #91600f;
+}
+
+ul.sousmenu:nth-of-type(5n+3){
+    background-color: #626A71;
+}
+
+ul.sousmenu:nth-of-type(5n+3) li:hover{
+    background-color: #3b4044;
+}
+
+ul.sousmenu:nth-of-type(5n+4){
+    background-color: #B7C72A;
+}
+
+ul.sousmenu:nth-of-type(5n+4) li:hover{
+    background-color: #5d6614;
+}
+
+nav .menucache ul li{
+    padding: 5px;
+    list-style-type: none;
+}
+
+nav .menucache>.barre2>ul>li:first-of-type{
+    font-size: 1.5rem;
+}
+
+
+nav .menucache ul li.sousmenu2{
+    font-size: 0.75rem;
+}
+
+nav .menucache ul.sousmenu{
+    vertical-align: top;
+    margin:0;
+    padding: 0;
+    width: 100%;
+}
+
+nav .menucache ul li a{
+    color: white;
+    text-decoration: none;
+}
+
 /*================== footer ================*/
 
 footer{
