@@ -27,7 +27,13 @@ h2 {
 }
 
 h3 {
-    font-size: 28px;
+    /*pour les images cliquables => voir fichier readme*/
+    font-size: 24px;
+    position: absolute;
+    width:100%;
+    margin: 0;
+    line-height: 24px;
+    top: calc(50% - 24px * 0.5);
 }
 
 p {
@@ -46,6 +52,7 @@ p {
 @media screen and (max-width:640px) {
     h1 {font-size: 36px;}
     h2 {font-size: 25px;}
+    h3 {font-size: 20px;}
     p{font-size: 15px;}
     .centre {
         text-align: left;
@@ -225,6 +232,47 @@ div > img {
     .containerx3 > div {
         width: 100%;
         margin-bottom: 1em;
+    }
+}
+
+                    /*===== gestion images cliquables =====*/
+
+figure {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+}
+
+figure > img {
+    vertical-align: middle;
+}
+
+figcaption {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgba(0,0,0,0.6);
+}
+
+figure:hover > figcaption {
+    top: 0;
+    -webkit-transition: top 0.4s ease;
+    -moz-transition: top 0.4s ease;
+    -ms-transition: top 0.4s ease;
+    -o-transition: top 0.4s ease;
+    transition: top 0.4s ease;
+}
+
+@media screen and (max-width: 640px) {
+    figcaption {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        background-color: rgba(0,0,0,0.6);
     }
 }
 

@@ -1,3 +1,4 @@
+/*animation fleche début de page*/
 #fleche{
     -moz-animation: bounce 0.35s ease infinite alternate;
     -webkit-animation: bounce 0.35s ease infinite alternate;
@@ -8,4 +9,14 @@
 @keyframes bounce{
     from {transform: translateY(0);}
     to   {transform: translateY(-20px);}
+}
+
+/*animation au survol d'une image cliquable*/
+figure:hover > figcaption {
+    top: 0;
+    -webkit-transition: top 0.4s ease;
+    -moz-transition: top 0.4s ease;
+    -ms-transition: top 0.4s ease;
+    -o-transition: top 0.4s ease;
+    transition: top 0.4s ease;
 }

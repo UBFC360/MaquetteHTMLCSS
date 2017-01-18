@@ -20,3 +20,5 @@ la class "img-background" est réservée aux sections avec une image derrière e
 la classe "savoir-plus" est réservée aux lies en savoir plus
 la classe "moitie" sert aux textes qui sont par dessus des images en plein écran, elles auront une width de moitié en résolution bureau et de 100% en résolution tablette et mobile
 la classe "bannière" sera utilisée sur les bannières des sous pages
+
+les h3 servent uniquement pour les images qui sont des liens
