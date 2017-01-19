@@ -34,6 +34,7 @@ h3 {
     margin: 0;
     line-height: 24px;
     top: calc(50% - 24px * 0.5);
+    margin-bottom: 1em;
 }
 
 p {
@@ -45,7 +46,8 @@ p {
     text-align: center;
 }
 
-.savoir-plus {
+.savoir-plus,
+.result > * {
      font-weight: bold;
  }
 
@@ -86,6 +88,74 @@ li {
 
 a {
     text-decoration: none;
+}
+
+                    /*========== Formulaires =========*/
+form {
+    padding-bottom: 50px;
+}
+
+input {
+    padding: 1em;
+    margin-right: 1em;
+    border-bottom: 3px solid #078ACC;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+
+}
+
+#formation {
+    width: calc(50% - 1.5em);
+}
+
+#lieu {
+    width: calc(30% - 1.5em);
+}
+
+#recherche {
+    width: calc(20% - 1.5em);
+    font-family: Biko, sans-serif;
+    background-color: #078acc;
+    border-bottom: 5px solid #056AB0;
+}
+
+#recherche:hover {
+    border-bottom: none;
+    background-color: #056AB0;
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 640px){
+    input {
+        margin-top: 1em;
+    }
+    #formation {
+        width: 100%;
+    }
+
+    #lieu {
+        width: 100%;
+    }
+
+    #recherche {
+        width: 40%;
+        font-family: Biko, sans-serif;
+        margin-right:30%;
+        margin-left:30%;
+        margin-top:1em;
+        background-color: #078acc;
+        border-bottom: 5px solid #056AB0;
+    }
+    #recherche:hover{
+        width: 40%;
+        font-family: Biko, sans-serif;
+        margin-right:30%;
+        margin-left:30%;
+        margin-top:1em;
+        background-color: #078acc;
+        border-bottom: 5px solid #056AB0;
+    }
 }
 
                     /*========= Mise en page =========*/
@@ -245,6 +315,8 @@ figure {
 
 figure > img {
     vertical-align: middle;
+    width: auto;
+    height: 200px;
 }
 
 figcaption {
@@ -254,6 +326,13 @@ figcaption {
     height: 100%;
     text-align: center;
     background-color: rgba(0,0,0,0.6);
+}
+
+figcaption p {
+    top: calc(60% - 24px * 0.5);
+    position: absolute;
+    padding: 1em;
+    width: 100%;
 }
 
 figure:hover > figcaption {
@@ -493,4 +572,52 @@ h2.blanc {
     left: 0;
     bottom: 0;
     z-index: 2;
+}
+
+
+                    /*========= Page Formations =========*/
+
+.formation{
+    background: url("image-contenu/img-head/Formation.jpeg") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height:auto;
+}
+
+.formation::before {
+    content: "";
+    background-color: rgba(7,138,204,0.7);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+                    /*==== Page Formations résultats ====*/
+
+.result{
+    margin-bottom: 1em;
+    position: relative;
+}
+
+.result > a::after {
+    content: '';
+    position: absolute;
+    background-color: #078acc;
+    height: 2px;
+    width: 0;
+    bottom:-2px;
+    left:0;
+}
+
+.result > a:hover::after {
+    width: 10em;
+    position: absolute;
+    -webkit-transition: width 0.4s ease;
+    -moz-transition: width 0.4s ease;
+    -ms-transition: width 0.4s ease;
+    -o-transition: width 0.4s ease;
+    transition: width 0.4s ease;
 }

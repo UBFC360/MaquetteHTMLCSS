@@ -22,3 +22,4 @@ la classe "moitie" sert aux textes qui sont par dessus des images en plein écra
 la classe "bannière" sera utilisée sur les bannières des sous pages
 
 les h3 servent uniquement pour les images qui sont des liens
+pour les images qui sont des liens il faut un div>a>figure>img+figcaption>h3
