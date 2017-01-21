@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/animations.css">
-    <script rel="text/javascript" src="js/menu.js"></script>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/menu.js"></script>
 </head>
 <body>
 <header>
@@ -138,16 +138,5 @@
         <a href="#">mentions légale</a>
     </div>
 </footer>
-
-<script>
-    $(document).ready( function() {
-        $('.barres').click(function(){
-            $('nav').toggleClass('hidden');
-            $('.menucache ul').hide(0).delay(300).show(200);
-            $('.menucache li').hide(0).delay(600).show(200);
-        })
-    });
-</script>
-
 </body>
 </html>

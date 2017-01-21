@@ -30,8 +30,12 @@ nav > ul > li{
 }
 
 nav > ul > li > a{
-    color: black;
     text-decoration: none;
+    color: white
+}
+
+nav.hidden > ul > li > a{
+    color: black
 }
 
 nav > ul > li > a.image-nav{
@@ -42,16 +46,28 @@ nav > ul > li > a.image-nav{
     background-size: auto;
 }
 
-.facebook{
+nav.hidden .facebook{
     background: url('image-contenu/img-reseaux-sociaux/facebook.svg') no-repeat;
 }
 
-.twitter{
+nav .facebook{
+    background: url('image-contenu/img-reseaux-sociaux/facebook-blanc.svg') no-repeat;
+}
+
+nav.hidden .twitter{
     background: url('image-contenu/img-reseaux-sociaux/twitter.svg') no-repeat;
 }
 
-.youtube{
+nav .twitter{
+    background: url('image-contenu/img-reseaux-sociaux/twitter-blanc.svg') no-repeat;
+}
+
+nav.hidden .youtube{
     background: url('image-contenu/img-reseaux-sociaux/youtube.svg') no-repeat;
+}
+
+nav .youtube{
+    background: url('image-contenu/img-reseaux-sociaux/youtube-blanc.svg') no-repeat;
 }
 
 nav .barres {
@@ -67,9 +83,13 @@ nav .barre {
     display: block;
     width: 20px;
     height: 2px;
-    background-color: #056AB0;
+    background-color: white;
     margin: 4px 0;
     transition: all ease 500ms;
+}
+
+nav.hidden .barre{
+    background-color: #056AB0;
 }
 
 ul.menu{
