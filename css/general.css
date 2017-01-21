@@ -269,7 +269,6 @@ div > img {
     vertical-align: top;
     overflow: hidden;
     margin-bottom: 1em;
-    background-color: lightgrey;
 }
 
 .col-2-txt > div {
@@ -305,13 +304,7 @@ div > img {
     overflow: hidden;
 }
 
-.principale ul,
-video {
-    width:90%;
-    padding: 0;
-    margin-left:auto;
-    margin-right:auto;
-}
+
 
 @media screen and (max-width: 960px){
     .containerx4 > div {
@@ -356,6 +349,25 @@ video {
     }
 }
 
+.col-2-txt img {
+    background-color: lightgrey;
+}
+
+.col-2-txt p,
+.col-2-img p,
+.containerx3 p,
+.containerx2 p,
+.containerx4 p{
+    margin-top: 0;
+}
+
+.principale ul,
+ video {
+     width:90%;
+     padding: 0;
+     margin-left:auto;
+     margin-right:auto;
+ }
                     /*===== gestion images cliquables =====*/
 
 figure {
@@ -387,14 +399,6 @@ figcaption p {
     margin: 0;
 }
 
-figure:hover > figcaption {
-    top: 0;
-    -webkit-transition: top 0.4s ease;
-    -moz-transition: top 0.4s ease;
-    -ms-transition: top 0.4s ease;
-    -o-transition: top 0.4s ease;
-    transition: top 0.4s ease;
-}
 
 @media screen and (max-width: 640px) {
     figcaption {
