@@ -34,7 +34,6 @@ h3 {
     margin: 0;
     line-height: 24px;
     top: calc(50% - 24px * 0.5);
-    margin-bottom: 1em;
 }
 
 p {
@@ -47,6 +46,7 @@ p {
 }
 
 .savoir-plus,
+.gras,
 .result > * {
      font-weight: bold;
  }
@@ -88,6 +88,10 @@ li {
 
 a {
     text-decoration: none;
+}
+
+span {
+    margin-right: 0.5em;
 }
 
                     /*========== Formulaires =========*/
@@ -197,14 +201,14 @@ input {
 }
 
 .col-2-img > div:first-of-type {
-    width: calc(66.6% - 1em);
+    width: calc(66.6% - 0.5em);
     vertical-align: top;
     overflow: hidden;
     margin-bottom: 1em;
 }
 
 .col-2-img > div {
-    width: calc(33.3% - 1em);
+    width: calc(33.3% - 0.5em);
     vertical-align: top;
     margin-bottom: 1em;
 }
@@ -212,6 +216,22 @@ input {
 div > img {
     width: 100%;
     height: auto;
+}
+
+.containerx2 {
+    display: flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.containerx2 > div {
+    width: calc(50% - 0.5em);
+    vertical-align: top;
+    overflow: hidden;
+    margin-bottom: 1em;
 }
 
 .containerx3 {
@@ -224,7 +244,7 @@ div > img {
 }
 
 .containerx3 > div {
-    width: calc(33.3% - 1em);
+    width: calc(33.3% - 0.5em);
     vertical-align: top;
     overflow: hidden;
     margin-bottom: 1em;
@@ -245,7 +265,7 @@ div > img {
 }
 
 .col-2-txt > div:last-of-type {
-    width: calc(66.6% - 1em);
+    width: calc(66.6% - 0.5em);
     vertical-align: top;
     overflow: hidden;
     margin-bottom: 1em;
@@ -265,14 +285,37 @@ div > img {
 }
 
 .containerx4 > div {
-    width: calc(25% - 1em);
+    width: calc(25% - 0.5em);
     background-color: lightgrey;
     margin-bottom: 1em;
 }
 
+.fiche {
+    background-color: lightgrey;
+    padding: 15px;
+}
+
+.fiche img {
+    width:100%;
+    height:auto;
+}
+
+.fiche > div > img {
+    height: 250px;
+    overflow: hidden;
+}
+
+.principale ul,
+video {
+    width:90%;
+    padding: 0;
+    margin-left:auto;
+    margin-right:auto;
+}
+
 @media screen and (max-width: 960px){
     .containerx4 > div {
-        width: calc(50% - 1em);
+        width: calc(50% - 0.5em);
         margin-bottom: 1em;
     }
     .col-2-img > div:first-of-type {
@@ -283,7 +326,7 @@ div > img {
         width: 100%;
     }
     .containerx3 > div {
-        width: calc(50% - 1em);
+        width: calc(50% - 0.5em);
         margin-bottom: 1em;
     }
     .col-2-txt > div:last-of-type {
@@ -303,6 +346,14 @@ div > img {
         width: 100%;
         margin-bottom: 1em;
     }
+    .containerx2 > div {
+        width: 100%;
+    }
+    .principale ul,
+    video {
+        width:100%;
+        padding: 0;
+    }
 }
 
                     /*===== gestion images cliquables =====*/
@@ -316,7 +367,7 @@ figure {
 figure > img {
     vertical-align: middle;
     width: auto;
-    height: 200px;
+    height: 250px;
 }
 
 figcaption {
@@ -333,6 +384,7 @@ figcaption p {
     position: absolute;
     padding: 1em;
     width: 100%;
+    margin: 0;
 }
 
 figure:hover > figcaption {
@@ -403,7 +455,9 @@ figure:hover > figcaption {
 }
 
 .img-head > h1,
-.img-head > img {
+.img-head > img,
+.banniere > h1,
+.banniere > img{
     z-index: 3;
 }
 
@@ -415,6 +469,17 @@ figure:hover > figcaption {
     padding-top:15%;
     padding-bottom:15%;
 }
+
+.banniere {
+    position: relative;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    padding-top:7%;
+    padding-bottom:3%;
+}
+
+
 
 h2.blanc {
     border-top: 2px solid white;
@@ -574,6 +639,25 @@ h2.blanc {
     z-index: 2;
 }
 
+                    /*========== Page actualités ==========*/
+
+.actus{
+    background: url("image-contenu/img-head/Actualites.jpeg") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height:auto;
+}
+
+.actus::before {
+    content: "";
+    background-color: rgba(220,147,26,0.7);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+}
 
                     /*========= Page Formations =========*/
 
