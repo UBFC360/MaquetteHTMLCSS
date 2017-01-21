@@ -1,4 +1,7 @@
 $(document).ready( function() {
+
+    $('body').addClass('hidden');
+
     $('.barres').click(function(e){
         $('nav').toggleClass('hidden');
         $('body').toggleClass('hidden');

@@ -709,3 +709,11 @@ h2.blanc {
     -o-transition: width 0.4s ease;
     transition: width 0.4s ease;
 }
+
+/* ========================= Page type =========================*/
+
+                    /*====== Page projets-recherche =====*/
+
+.archive a {
+    margin-left: 0.5em;
+}
