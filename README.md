@@ -23,3 +23,5 @@ la classe "bannière" sera utilisée sur les bannières des sous pages
 
 les h3 servent uniquement pour les images qui sont des liens
 pour les images qui sont des liens il faut un div>a>figure>img+figcaption>h3
+
+la classe annexe sert juste aux contenu similaire a la fin decertaines pages ou articles

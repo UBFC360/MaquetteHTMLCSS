@@ -479,7 +479,7 @@ figcaption p {
     display: flex;
     align-items:center;
     flex-direction: column;
-    padding-top:7%;
+    padding-top:6%;
     padding-bottom:3%;
 }
 
@@ -716,4 +716,28 @@ h2.blanc {
 
 .archive a {
     margin-left: 0.5em;
+}
+
+                    /*======== gestion des pages =======*/
+
+.pages ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.pages li {
+    margin-right: 0.5em;
+}
+
+.pages p,
+.pages a{
+    margin: 0;
+}
+
+                    /*====== gestion des annexes =====*/
+
+.annexe {
+    border-top: 2px solid #DC931A;
+    padding-top: 2em;
 }
