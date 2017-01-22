@@ -184,43 +184,63 @@ nav .menucache .barre1 i {
 }
 
 ul.sousmenu:nth-of-type(5n+0) {
-    background-color: #078ACC;
+    background-color: #0aaeef;
 }
 
-ul.sousmenu:nth-of-type(5n+0) li:hover {
+ul.sousmenu:nth-of-type(5n+0) li:hover, ul.sousmenu.sousmenu:nth-of-type(5n+0)>li:first-of-type:hover {
     background-color: #035984;
 }
 
-ul.sousmenu:nth-of-type(5n+1) {
-    background-color: #981B79;
+ul.sousmenu:nth-of-type(5n+0) li:first-of-type{
+    background-color: #078ACC;
 }
 
-ul.sousmenu:nth-of-type(5n+1) li:hover {
+ul.sousmenu:nth-of-type(5n+1) {
+    background-color: #bc249c;
+}
+
+ul.sousmenu:nth-of-type(5n+1) li:hover, ul.sousmenu.sousmenu:nth-of-type(5n+1)>li:first-of-type:hover {
     background-color: #590f46;
 }
 
-ul.sousmenu:nth-of-type(5n+2) {
-    background-color: #DC931A;
+ul.sousmenu.sousmenu:nth-of-type(5n+1)>li:first-of-type {
+    background-color: #981b79;
 }
 
-ul.sousmenu:nth-of-type(5n+2) li:hover {
+ul.sousmenu:nth-of-type(5n+2) {
+    background-color: #dbbe8f;
+}
+
+ul.sousmenu:nth-of-type(5n+2) li:hover, ul.sousmenu.sousmenu:nth-of-type(5n+2)>li:first-of-type:hover {
     background-color: #91600f;
 }
 
-ul.sousmenu:nth-of-type(5n+3) {
-    background-color: #626A71;
+ul.sousmenu.sousmenu:nth-of-type(5n+2)>li:first-of-type {
+    background-color: #DC931A;
 }
 
-ul.sousmenu:nth-of-type(5n+3) li:hover {
+ul.sousmenu:nth-of-type(5n+3) {
+    background-color: #949fa8;
+}
+
+ul.sousmenu:nth-of-type(5n+3) li:hover, ul.sousmenu.sousmenu:nth-of-type(5n+3)>li:first-of-type:hover {
     background-color: #3b4044;
 }
 
+ul.sousmenu.sousmenu:nth-of-type(5n+3)>li:first-of-type {
+    background-color: #626A71;
+}
+
 ul.sousmenu:nth-of-type(5n+4) {
-    background-color: #B7C72A;
+    background-color: #dde533;
 }
 
 ul.sousmenu:nth-of-type(5n+4) li:hover {
     background-color: #5d6614;
+}
+
+ul.sousmenu.sousmenu:nth-of-type(5n+4)>li:first-of-type {
+    background-color: #B7C72A;
 }
 
 nav .menucache ul li {
