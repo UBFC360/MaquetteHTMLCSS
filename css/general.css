@@ -22,7 +22,7 @@ h1 {
 }
 
 h2 {
-    font-size: 35px;
+    font-size: 34px;
     margin-top: 0;
 }
 
@@ -99,6 +99,22 @@ a {
 span {
     margin-right: 0.5em;
 }
+
+
+h2.blanc {
+    position: relative;
+}
+
+h2.blanc::after {
+    content: '';
+    position: absolute;
+    top: -0.2em;
+    left: 0;
+    border-top: 2px solid white;
+    width: 33%;
+    padding-top: 3px;
+}
+
 
                     /*========== Formulaires =========*/
 form {
@@ -489,14 +505,6 @@ figcaption p {
     padding-bottom:3%;
 }
 
-
-
-h2.blanc {
-    border-top: 2px solid white;
-    width: 25%;
-    padding-top: 3px;
-}
-
                     /*=========== Page campus ===========*/
 
 .campus {
@@ -611,6 +619,24 @@ h2.blanc {
     z-index: 2;
 }
 
+.ubfc3 {
+    background: url("image-contenu/img-head/ubfc3.jpeg") no-repeat fixed;
+    background-size: cover;
+    width: 100%;
+    height:auto;
+}
+
+.ubfc3::before {
+    content: "";
+    background-color: rgba(5,106,176,0.7);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
                     /*========= Page international =========*/
 
 .international{
@@ -632,7 +658,7 @@ h2.blanc {
 }
 
 .international2 {
-    background: url("image-contenu/img-head/international 2.jpeg") no-repeat fixed;
+    background: url("image-contenu/img-head/international2.jpeg") no-repeat fixed;
     background-size: cover;
     width: 100%;
     height:auto;
@@ -689,33 +715,6 @@ h2.blanc {
     z-index: 2;
 }
 
-                    /*==== Page Formations résultats ====*/
-
-.result{
-    margin-bottom: 1em;
-    position: relative;
-}
-
-.result > a::after {
-    content: '';
-    position: absolute;
-    background-color: #078acc;
-    height: 2px;
-    width: 0;
-    bottom:-2px;
-    left:0;
-}
-
-.result > a:hover::after {
-    width: 10em;
-    position: absolute;
-    -webkit-transition: width 0.4s ease;
-    -moz-transition: width 0.4s ease;
-    -ms-transition: width 0.4s ease;
-    -o-transition: width 0.4s ease;
-    transition: width 0.4s ease;
-}
-
 /* ========================= Page type =========================*/
 
                     /*====== Page projets-recherche =====*/
@@ -724,7 +723,7 @@ h2.blanc {
     margin-left: 0.5em;
 }
 
-                    /*======== gestion des pages =======*/
+                    /*====== gestion des bas de pages =====*/
 
 .pages ul{
     display: flex;
