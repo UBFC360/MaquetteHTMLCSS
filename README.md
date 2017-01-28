@@ -2,7 +2,7 @@
 Developpement maquette css
 
 pour les couleurs pour chaque page : classe bleu-clair, bleu-fonce, vert, orange, violet, gris juste sur la color
-pour les images de chaque header on ajoute les classes actus, ubfc, recherche, formations, campus, international, projets et img-head sur toutes pour avoir les meme styles
+pour les images de chaque header on ajoute les classes actus, ubfc, recherche, formations, campus, international, opportunites et img-head sur toutes pour avoir les meme styles
 avec juste l'image qui change
 
 Classe pour utiliser du display flex :

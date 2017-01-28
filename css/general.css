@@ -36,6 +36,11 @@ h3 {
     top: calc(50% - 24px * 0.5);
 }
 
+h4 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
 p {
      font-size: 18px;
      font-weight: lighter;
@@ -265,7 +270,8 @@ div > img {
     flex-wrap: wrap;
 }
 
-.containerx3 > div {
+.containerx3 > div,
+.containerx3 > a {
     width: calc(33.3% - 0.5em);
     vertical-align: top;
     overflow: hidden;
@@ -303,16 +309,17 @@ div > img {
     -webkit-flex-direction: row;
     -webkit-justify-content: space-between;
     -webkit-flex-wrap: wrap;
+    justify-content:space-between;
+    flex-wrap:wrap;
 }
 
 .containerx4 > div {
     width: calc(25% - 0.5em);
-    background-color: lightgrey;
     margin-bottom: 1em;
 }
 
 .fiche {
-    background-color: lightgrey;
+    background-color: #fff;
     padding: 15px;
 }
 
@@ -321,7 +328,7 @@ div > img {
     height:auto;
 }
 
-.fiche > div > img {
+.fiche > div {
     height: 250px;
     overflow: hidden;
 }
@@ -340,7 +347,8 @@ div > img {
     .col-2-img > div {
         width: 100%;
     }
-    .containerx3 > div {
+    .containerx3 > div,
+    .containerx3 > a{
         width: calc(50% - 0.5em);
         margin-bottom: 1em;
     }
@@ -357,7 +365,8 @@ div > img {
     .containerx4 > div {
         width: 100%;
     }
-    .containerx3 > div {
+    .containerx3 > div,
+    .containerx3 > a {
         width: 100%;
         margin-bottom: 1em;
     }
@@ -675,6 +684,44 @@ figcaption p {
     z-index: 2;
 }
 
+                    /*========= Page opportunités =========*/
+
+.opportunites {
+    background: url("image-contenu/img-head/randompicture.jpeg") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height:auto;
+}
+
+.opportunites::before {
+    content: "";
+    background-color: rgba(183,199,42,0.7);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+.opportunites2 {
+    background: url("image-contenu/img-head/pepite.png") no-repeat fixed;
+    background-size: cover;
+    width: 100%;
+    height:auto;
+}
+
+.opportunites2::before {
+    content: "";
+    background-color: rgba(183,199,42,0.7);
+    position: absolute;
+    top:0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
                     /*========== Page actualités ==========*/
 
 .actus{
@@ -746,3 +793,32 @@ figcaption p {
     border-top: 2px solid #DC931A;
     padding-top: 2em;
 }
+
+                    /*==== page formation doctorale ====*/
+
+.tuiles:first-of-type {
+    background-color: #056AB0;
+}
+
+.tuiles:nth-of-type(2) {
+    background-color: #bc249c;
+}
+
+.tuiles:nth-of-type(3) {
+    background-color: #626A71;
+}
+
+.tuiles:nth-of-type(4) {
+    background-color: #DC931A;
+}
+
+.tuiles:nth-of-type(5) {
+    background-color: #078ACC;
+}
+
+.tuiles:last-of-type {
+    background-color: #B7C72A;
+}
+
+
+
