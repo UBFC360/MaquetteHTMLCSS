@@ -275,7 +275,7 @@ nav .menucache ul li a {
     }
 
     ul.sousmenu2 {
-        display: none;
+        display: none !important;
     }
 
     .menucache {
