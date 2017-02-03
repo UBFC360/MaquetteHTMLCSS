@@ -270,6 +270,22 @@ div > img {
     margin-bottom: 1em;
 }
 
+.containerx2-inverse {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    width: calc(50% - 0.5em);
+    flex-wrap: wrap;
+}
+
+.containerx2-inverse > div {
+    overflow: hidden;
+    margin-bottom: 1em;
+}
+
 .containerx3 {
     display: flex;
     justify-content: space-between;
