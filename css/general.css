@@ -273,11 +273,10 @@ div > img {
 .containerx2-inverse {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    -webkit-justify-content: space-between;
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
-    width: calc(50% - 0.5em);
     flex-wrap: wrap;
 }
 
@@ -305,7 +304,6 @@ div > img {
 
 .containerx3 > div > img {
     width: 100%;
-    background-color: lightgrey;
 }
 
 .col-2-txt {
@@ -403,10 +401,6 @@ div > img {
         width:100%;
         padding: 0;
     }
-}
-
-.col-2-txt img {
-    background-color: lightgrey;
 }
 
 .col-2-txt p,
