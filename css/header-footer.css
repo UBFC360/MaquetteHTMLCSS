@@ -312,33 +312,17 @@ nav .menucache ul li a {
 
 /*================== footer ================*/
 
-footer {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding-top: 30px;
-}
-
-footer p {
-    margin: 0;
-    padding: 0;
-}
 
 .footer-logo p.logo-footer {
     margin: auto;
     display: block;
     text-indent: -999999px;
-    height: 200px;
-    width: 150px;
+    height: 300px;
+    width: 250px;
     background-size: auto;
-    background: url('../image-interface/logofooter.svg') no-repeat;
+    background: url('../image-interface/logo-UBFC/logofooter.svg') no-repeat;
 }
 
-footer .footer {
-    width: 25%;
-    text-align: center;
-
-}
 
 footer .footer-partenaire li {
     display: inline;
@@ -351,6 +335,30 @@ footer .footer-partenaire .logo-partenaire {
     height: 70px;
     width: 100px;
     background-size: contain;
+}
+
+.gris-fonce{
+    background-color: #626A71;
+    color: #949fa8;
+}
+
+.gris-clair {
+    background-color: #949fa8;
+    color: #626A71;
+}
+ footer a {
+     color: #949fa8;
+     font-weight: normal;
+ }
+footer p{
+    line-height: 0.4;
+    font-weight: normal;
+}
+
+footer .principale{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0 auto;
 }
 
 footer .footer-partenaire .partenaire1 {
