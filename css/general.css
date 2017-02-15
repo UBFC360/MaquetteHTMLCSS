@@ -873,3 +873,9 @@ button {
     width: 450px;
     margin: 10px auto;
 }
+
+.fleche-centre {
+    display: flex;
+    justify-content: center;
+    padding-top:50vh;
+}

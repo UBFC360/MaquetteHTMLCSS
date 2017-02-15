@@ -334,10 +334,6 @@ nav .menucache ul li a {
         flex-direction: column;
     }
 
-    .menu li, .reseau-sociaux {
-        display: none !important;
-    }
-
     header input{
         transition: all ease 450ms;
         width: 50%;
