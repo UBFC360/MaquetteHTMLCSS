@@ -152,6 +152,7 @@ nav.hidden .menucache {
     transition: ease 450ms;
     opacity: 0;
     height: 950px;
+    display: none;
 }
 
 nav .menucache .barre2 {
